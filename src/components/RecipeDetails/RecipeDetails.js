@@ -59,7 +59,7 @@ class RecipeDetails extends Component {
        
         return (
             <>
-            <div className='container recipe-details'>
+            <div className='container mb-5 recipe-details'>
                 <div className='row'>
                     <section className='col-md-8  col-12'>
                       
