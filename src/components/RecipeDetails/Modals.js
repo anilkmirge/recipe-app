@@ -11,21 +11,22 @@ function VideoModal(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
-        Watch Video
-      </Button>
+		<>
+    {!props.strYoutube ? 
+      <p className='btn btn-danger'>Video not available</p>
+      :
+      <Button variant='primary' onClick={handleShow}>Watch Video</Button>
+    }
+			
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton/> 
-        <Modal.Body>
-
-                            <VideoPlayer videoUrl={props.strYoutube} />
-                        </Modal.Body>
-        
-      </Modal>
-    </>
-  );
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header closeButton />
+				<Modal.Body>
+						<VideoPlayer videoUrl={props.strYoutube} />
+				</Modal.Body>
+			</Modal>
+		</>
+	);
 }
 
 export default VideoModal

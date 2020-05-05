@@ -4,15 +4,16 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter} from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
+import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top';
 
 ReactDOM.render(
-    <BrowserRouter>
-        <ScrollToTop />
-        <App />
-    </BrowserRouter>,
-    document.getElementById('root')
+	<BrowserRouter>
+		<ScrollToTop>
+			<App />
+		</ScrollToTop>
+	</BrowserRouter>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -14,7 +14,7 @@ function Home() {
             <section className='container col-12'>
                 <img src={home} alt='salad' className='img-fluid h-auto' />
                 <div className='position-absolute card-img-overlay'>
-                    <h1 className='text-center home-container' >Welcome to the YUMMY-TOWN.</h1>
+                    <h1 className='text-center home-container'>Welcome to the YUMMY-TOWN.</h1>
                 </div>
             </section>
 
